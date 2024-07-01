@@ -1,0 +1,215 @@
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: #000;
+    font-family: Montserrat Alternates;
+    font-size: 26.946px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+p{
+  text-align: center;
+}
+.logophoto, .stage{
+    display: flex;
+    justify-content: center;
+}
+.main-reg{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+  width: 300px;
+  margin-top: 10px;
+  display: flex;
+  border: none;
+  height: 35px;
+  padding: 10px;
+  text-align: center;
+  text-transform: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  background: #FFF;
+}
+
+input::placeholder{
+  text-transform: uppercase;
+    color: #AEAEAE;
+    font-family: Montserrat Alternates;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+}
+img{
+    width: 150px;
+}
+
+.stage {
+  margin-top: 20px;
+    display: flex;
+    height: 170px;
+    width: 100%;
+}
+.logophoto {
+    align-self: flex-end;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function:cubic-bezier(1, 1, 1, 1);
+}
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+
+.itc-slider__items {
+    counter-reset: slide;
+  }
+
+  .itc-slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    counter-increment: slide;
+    height: 250px;
+    position: relative;
+  }
+
+  .itc-slider__item::before {
+    content: counter(slide) "/5";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+  }
+
+  .itc-slider__item:nth-child(1) {
+    background-color: #f44336;
+  }
+
+  .itc-slider__item:nth-child(2) {
+    background-color: #9c27b0;
+  }
+
+  .itc-slider__item:nth-child(3) {
+    background-color: #3f51b5;
+  }
+
+  .itc-slider__item:nth-child(4) {
+    background-color: #03a9f4;
+  }
+
+  .itc-slider__item:nth-child(5) {
+    background-color: #4caf50;
+  }
+  *,
+    *::before,
+    *::after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+
+    *::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+  
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol';
+      }
+  
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+  
+      .itc-slider__items {
+        counter-reset: slide;
+      }
+  
+      .itc-slider__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        counter-increment: slide;
+        height: 250px;
+        position: relative;
+      }
+  
+      .itc-slider__item::before {
+        content: counter(slide) "/5";
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #fff;
+        font-style: italic;
+        font-size: 32px;
+        font-weight: bold;
+        display: block;
+      }
+  
+      .itc-slider__item:nth-child(1) {
+        background-color: #f44336;
+      }
+  
+      .itc-slider__item:nth-child(2) {
+        background-color: #9c27b0;
+      }
+  
+      .itc-slider__item:nth-child(3) {
+        background-color: #3f51b5;
+      }
+  
+      .itc-slider__item:nth-child(4) {
+        background-color: #03a9f4;
+      }
+  
+      .itc-slider__item:nth-child(5) {
+        background-color: #4caf50;
+      }
+
+button{
+  margin-top: 20px;
+  border-radius: 8px;
+  background: #00846C;
+  padding: 10px;
+  color: #FFF;
+  font-family: Montserrat Alternates;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  border: 0;
+  width: inherit;
+  height: 32px;
+}

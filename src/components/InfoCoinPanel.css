@@ -1,0 +1,49 @@
+.infocoinpanel {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.coin {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    color: rgb(0, 0, 0);
+}
+
+.coin-image {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.charge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.charge-container {
+    background-image: url('../assets/charge.svg');
+    background-size: cover;
+    background-position: center;
+    height: 27px;
+    width: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+
+}
+
+
+.charge-bar {
+    margin-bottom: 4px;
+
+    width: 7px;
+
+}
+
+
